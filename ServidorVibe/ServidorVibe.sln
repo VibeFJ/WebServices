@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorVibe", "ServidorVibe.csproj", "{321D2B8E-4F9D-4D22-B9FF-2D11C0F133B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{321D2B8E-4F9D-4D22-B9FF-2D11C0F133B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321D2B8E-4F9D-4D22-B9FF-2D11C0F133B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321D2B8E-4F9D-4D22-B9FF-2D11C0F133B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321D2B8E-4F9D-4D22-B9FF-2D11C0F133B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32CE4682-97A6-4F50-979E-9A159AB40899}
+	EndGlobalSection
+EndGlobal

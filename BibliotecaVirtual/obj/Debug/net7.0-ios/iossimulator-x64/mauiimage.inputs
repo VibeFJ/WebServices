@@ -1,0 +1,11 @@
+File=Resources\Images\dotnet_bot.svg;Link=;BaseSize=168,208;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\book.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\chart_line.svg;Link=;BaseSize=;Resize=;TintColor=White;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\code.svg;Link=;BaseSize=;Resize=;TintColor=White;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\floppy_disk.svg;Link=;BaseSize=;Resize=;TintColor=White;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\mobile.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\mobile_button.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\mobile_retro.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\mobile_screen.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\Images\FontAwesome\solid\mobile_screen_button.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources\AppIcon\appicon.svg;Link=;BaseSize=;Resize=;TintColor=;Color=#512BD4;IsAppIcon=True;ForegroundScale=;ForegroundFile=Resources\AppIcon\appiconfg.svg

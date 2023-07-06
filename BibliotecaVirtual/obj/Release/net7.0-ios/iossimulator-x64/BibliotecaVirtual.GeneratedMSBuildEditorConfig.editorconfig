@@ -1,0 +1,72 @@
+is_global = true
+build_property.PropertyChangedAnalyzerConfiguration = 
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BibliotecaVirtual
+build_property.ProjectDir = D:\MAUI\BibliotecaVirtual\
+
+[D:/MAUI/BibliotecaVirtual/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/MAUI/BibliotecaVirtual/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/MAUI/BibliotecaVirtual/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/MAUI/BibliotecaVirtual/MVVM/Views/Formulario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Formulario.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Formulario.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Formulario.xaml
+
+[D:/MAUI/BibliotecaVirtual/MVVM/Views/Graficos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Graficos.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Graficos.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Graficos.xaml
+
+[D:/MAUI/BibliotecaVirtual/MVVM/Views/Libros.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Libros.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Libros.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Libros.xaml
+
+[D:/MAUI/BibliotecaVirtual/MVVM/Views/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Login.xaml
+
+[D:/MAUI/BibliotecaVirtual/MVVM/Views/Principal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Principal.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Principal.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Principal.xaml
+
+[D:/MAUI/BibliotecaVirtual/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/MAUI/BibliotecaVirtual/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

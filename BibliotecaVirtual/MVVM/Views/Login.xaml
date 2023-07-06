@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:BibliotecaVirtual.MVVM.ViewModels"
+             x:Class="BibliotecaVirtual.MVVM.Views.Login"
+             x:DataType="viewModels:LoginViewModel"
+             Title="Login">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout BackgroundColor="White"
+                     Padding="20">
+
+                <Label Text="Bienvenido"
+                       TextColor="Black"
+                       FontSize="24" 
+                       HorizontalOptions="Center" 
+                       Margin="0,10"/>
+
+                <Image Source="dotnet_bot.svg"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       Margin="0,0,0,30"/>
+
+                <Entry Text="{Binding NombreUsuario}"
+                   Placeholder="Usuario"
+                   TextColor="Black"
+                   Margin="0,0,0,20" />
+
+                <Entry Text="{Binding Contraseña}"
+                   Placeholder="Contraseña"
+                   TextColor="Black"
+                   IsPassword="True"
+                   Margin="0,0,0,20" />
+
+                <Label Text="{Binding MensajeError}"
+                   IsVisible="{Binding MensajeError}"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   Margin="0,10" />
+
+                <Button x:Name="btnLogin"
+                        BackgroundColor="{StaticResource colorAzulClaro}"
+                        Text="Iniciar sesión"
+                        TextColor="White"
+                        Command="{Binding LoginCommand}"
+                        Margin="0,20"/>
+
+                <Button x:Name="btnRegistrarse"
+                        BackgroundColor="{StaticResource colorAzulClaro}"
+                        Text="Registrarse"
+                        TextColor="White"
+                        Command="{Binding RegistroCommand}"
+                        Margin="0,20"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

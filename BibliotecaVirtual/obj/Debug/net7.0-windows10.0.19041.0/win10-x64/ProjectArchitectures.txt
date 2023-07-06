@@ -1,0 +1,1 @@
+D:\MAUI\BibliotecaVirtual\BibliotecaVirtual.csproj;x64
