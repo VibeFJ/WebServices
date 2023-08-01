@@ -85,7 +85,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ControladoresNegocio\ctrLibros.cs" />
+    <Compile Include="Controllers\LibrosController.cs" />
     <Compile Include="Controllers\GraficosController.cs" />
+    <Compile Include="Entidades\Libros.cs" />
     <Compile Include="Entidades\Graficos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

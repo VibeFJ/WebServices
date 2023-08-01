@@ -13,57 +13,57 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BibliotecaVirtual
-build_property.ProjectDir = D:\WebService\BibliotecaVirtual\
+build_property.ProjectDir = D:\WebServices\BibliotecaVirtual\
 
-[D:/WebService/BibliotecaVirtual/App.xaml]
+[D:/WebServices/BibliotecaVirtual/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/WebService/BibliotecaVirtual/AppShell.xaml]
+[D:/WebServices/BibliotecaVirtual/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/WebService/BibliotecaVirtual/MainPage.xaml]
+[D:/WebServices/BibliotecaVirtual/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/WebService/BibliotecaVirtual/MVVM/Views/Formulario.xaml]
+[D:/WebServices/BibliotecaVirtual/MVVM/Views/Formulario.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Formulario.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Formulario.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Formulario.xaml
 
-[D:/WebService/BibliotecaVirtual/MVVM/Views/Graficos.xaml]
+[D:/WebServices/BibliotecaVirtual/MVVM/Views/Graficos.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Graficos.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Graficos.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Graficos.xaml
 
-[D:/WebService/BibliotecaVirtual/MVVM/Views/Login.xaml]
+[D:/WebServices/BibliotecaVirtual/MVVM/Views/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Login.xaml
 
-[D:/WebService/BibliotecaVirtual/MVVM/Views/Principal.xaml]
+[D:/WebServices/BibliotecaVirtual/MVVM/Views/Principal.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.MVVM.Views.Principal.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Principal.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Principal.xaml
 
-[D:/WebService/BibliotecaVirtual/Resources/Styles/Colors.xaml]
+[D:/WebServices/BibliotecaVirtual/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/WebService/BibliotecaVirtual/Resources/Styles/Styles.xaml]
+[D:/WebServices/BibliotecaVirtual/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BibliotecaVirtual.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
