@@ -18,7 +18,7 @@ namespace ServidorVibe.Controllers
             return respuesta;
         }
 
-        [HttpPost]
+        [HttpPut]
         [ActionName("Actualizar")]
         public bool Actualizar(Libros objeto)
         {
