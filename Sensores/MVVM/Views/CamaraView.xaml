@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Sensores.MVVM.ViewModels"
+             xmlns:views="clr-namespace:Sensores.MVVM.Views"
+             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             x:Class="Sensores.MVVM.Views.CamaraView">
+
+    <ScrollView HorizontalOptions="FillAndExpand"
+                BackgroundColor="White">
+        <ScrollView VerticalOptions="FillAndExpand">
+            <Grid RowDefinitions="70,200,10,20,20">
+
+                <Grid Grid.Row="1"
+                      BackgroundColor="Transparent">
+                    <cv:CameraView x:Name="cameraView"
+                                   CamerasLoaded="OnCameraViewLoaded"
+                                   BarCodeDetectionEnabled="True"
+                                   BarcodeDetected="OnBarcodeDetected"/>
+                </Grid>
+
+                <Grid Grid.Row="3"
+                  BackgroundColor="Transparent">
+
+                    <Label x:Name="lblResultado"
+                           Text="{Binding Resultado}"/>
+
+                </Grid>
+                <Grid Grid.Row="4"
+                  BackgroundColor="Transparent">
+
+                    <Label x:Name="lblEnvio"
+                           Text="{Binding Envio}"/>
+
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ScrollView>
+</ContentView>

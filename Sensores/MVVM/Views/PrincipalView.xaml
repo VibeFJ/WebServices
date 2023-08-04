@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:viewModels="clr-namespace:Sensores.MVVM.ViewModels"
+            x:Class="Sensores.MVVM.Views.PrincipalView"
+            x:DataType="viewModels:PrincipalViewModel"
+            Title="Principal">
+
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menú"
+                     BackgroundColor="White">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="500"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Row="0"
+                            BackgroundColor="{StaticResource colorAzulClaro}"
+                            TextColor="White"
+                            Text="Inicio Sesión"
+                            FontSize="16"
+                            Margin="10">
+                    </Button>
+
+                    <Grid Grid.Row="1">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Frame Grid.Row="0"
+                               BackgroundColor="{StaticResource colorAzulClaro}"
+                               BorderColor="Transparent"
+                               Margin="10"
+                               CornerRadius="15">
+
+                            <Grid Margin="-20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <ImageButton Grid.Column="0"
+                                             Source="camera_retro"
+                                             HeightRequest="45"
+                                             WidthRequest="45"
+                                             Margin="30,0,0,0">
+                                </ImageButton>
+
+                                <Button Grid.Column="1"
+                                        BackgroundColor="Transparent"
+                                        Margin="-70,0,0,0"
+                                        Text="               Camara"
+                                        TextColor="White"
+                                        FontSize="16"
+                                        Command="{Binding CamaraCommand}">
+                                </Button>
+                            </Grid>
+                        </Frame>
+
+                        <Frame Grid.Row="1"
+                               BackgroundColor="{StaticResource colorAzulClaro}"
+                               BorderColor="Transparent"
+                               Margin="10"
+                               CornerRadius="15">
+
+                            <Grid Margin="-20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <ImageButton Grid.Column="0"
+                                             Source="book_open"
+                                             HeightRequest="45"
+                                             WidthRequest="45"
+                                             Margin="30,0,0,0">
+                                </ImageButton>
+
+                                <Button Grid.Column="1"
+                                        BackgroundColor="Transparent"
+                                        Margin="-70,0,0,0"
+                                        Text="         Libros Prestados"
+                                        TextColor="White"
+                                        FontSize="16"
+                                        Command="{Binding PrestadosCommand}">
+                                </Button>
+                            </Grid>
+                        </Frame>
+
+                        <Frame Grid.Row="2"
+                               BackgroundColor="{StaticResource colorAzulClaro}"
+                               BorderColor="Transparent"
+                               Margin="10"
+                               CornerRadius="15">
+
+                            <Grid Margin="-20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <ImageButton Grid.Column="0"
+                                             Source="book_open"
+                                             HeightRequest="45"
+                                             WidthRequest="45"
+                                             Margin="30,0,0,0">
+                                </ImageButton>
+
+                                <Button Grid.Column="1"
+                                        BackgroundColor="Transparent"
+                                        Margin="-70,0,0,0"
+                                        Text="         Libros Devueltos"
+                                        TextColor="White"
+                                        FontSize="16"
+                                        Command="{Binding DevueltosCommand}">
+                                </Button>
+                            </Grid>
+                        </Frame>
+                        
+                    </Grid>
+
+                    <Button Grid.Row="2"
+                            BackgroundColor="{StaticResource colorAzulClaro}"
+                            TextColor="White"
+                            Text="Cerrar Sesión"
+                            FontSize="16"
+                            Margin="10">
+                    </Button>
+                    
+                </Grid>
+
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="Detalles" BackgroundColor="White">
+                    <ContentPresenter Content="{Binding DetallesView}" />
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+    
+</FlyoutPage>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:Sensores.MVVM.Views"
+             x:Class="Sensores.MVVM.Views.LibrosView"
+             x:Name="Libros">
+
+    <ScrollView HorizontalOptions="FillAndExpand"
+                BackgroundColor="White">
+        <ScrollView VerticalOptions="FillAndExpand">
+            <CollectionView ItemsSource="{Binding LVM}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="2"
+                                     x:Name="gridLayout"
+                                     VerticalItemSpacing="10"
+                                     HorizontalItemSpacing="10"/>
+                    
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HeightRequest="250"
+                              WidthRequest="180"
+                              RowDefinitions="8*,1*,1*">
+
+                            <Grid Grid.Row="0"
+                                   Background="Transparent"
+                                   BackgroundColor="Transparent"
+                                   Margin="40">
+
+                                <ImageButton Margin="-30,-20,-30,-20"
+                                             Source="book"
+                                             Command="{Binding BindingContext.LibroCommand, Source={RelativeSource AncestorType={x:Type views:LibrosView}}}"
+                                             CommandParameter="{Binding CodigoLibro}">
+                                </ImageButton>
+
+                            </Grid>
+
+                            <Label Grid.Row="1"
+                                   Text="{Binding Titulo}"
+                                   FontSize="12"
+                                   TextColor="{StaticResource colorAzulClaro}"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center" />
+
+                            <Label Grid.Row="2"
+                                   FontSize="12"
+                                   TextColor="{StaticResource colorAzulClaro}"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding Autor}" />
+                                        <Span Text="-" />
+                                        <Span Text="{Binding AñoPublicacion}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </ScrollView>
+</ContentView>
