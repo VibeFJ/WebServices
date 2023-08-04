@@ -11,10 +11,10 @@ namespace ServidorVibe.Controllers
     {
         [HttpPost]
         [ActionName("Obtener")]
-        public List<Libros> Obtener()
+        public List<Libros> Obtener(Libros objeto)
         {
             var controlador = new ctrLibros();
-            var respuesta = controlador.Obtener();
+            var respuesta = controlador.Obtener(objeto);
             return respuesta;
         }
 

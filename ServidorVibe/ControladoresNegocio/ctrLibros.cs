@@ -10,7 +10,7 @@ namespace ServidorVibe.ControladoresNegocio
     public class ctrLibros
     {
         private string administradorBD = ConfigurationManager.ConnectionStrings["NombreConexionBD"].ConnectionString;
-        public List<Libros> Obtener()
+        public List<Libros> Obtener(Libros objeto)
         {
             var respuesta = new List<Libros>();
             try
@@ -19,7 +19,15 @@ namespace ServidorVibe.ControladoresNegocio
                 {
                     connection.Open();
 
-                    var query = "SELECT * FROM Libros";
+                    string query;
+                    if (objeto.Estatus == 2)
+                    {
+                        query = "SELECT * FROM Libros";
+                    }
+                    else
+                    {
+                        query = "SELECT * FROM Libros WHERE Estatus = " + objeto.Estatus;
+                    }
                     var command = new SqlCommand(query, connection);
 
                     using (var reader = command.ExecuteReader())
@@ -53,7 +61,6 @@ namespace ServidorVibe.ControladoresNegocio
 
         public bool Actualizar(Libros objeto)
         {
-            var respuesta = new bool();
             try
             {
                 using (var connection = new SqlConnection(administradorBD))
@@ -62,35 +69,21 @@ namespace ServidorVibe.ControladoresNegocio
 
                     var query = @"
                         UPDATE Libros
-                        SET CodigoLibro = @CodigoLibro,
-                            Titulo = @Titulo,
-                            Caratula = @Caratula,
-                            Autor = @Autor,
-                            Tema = @Tema,
-                            AñoPublicacion = @AñoPublicacion,
-                            Editorial = @Editorial,
-                            Estatus = @Estatus
-                        WHERE LibroId = @LibroId
+                        SET Estatus = @Estatus
+                        WHERE CodigoLibro = @CodigoLibro
                     ";
                     var command = new SqlCommand(query, connection);
 
-                    command.Parameters.AddWithValue("@LibroId", objeto.LibroId);
                     command.Parameters.AddWithValue("@CodigoLibro", objeto.CodigoLibro);
-                    command.Parameters.AddWithValue("@Titulo", objeto.Titulo);
-                    command.Parameters.AddWithValue("@Caratula", objeto.Caratula);
-                    command.Parameters.AddWithValue("@Autor", objeto.Autor);
-                    command.Parameters.AddWithValue("@Tema", objeto.Tema);
-                    command.Parameters.AddWithValue("@AñoPublicacion", objeto.AñoPublicacion);
-                    command.Parameters.AddWithValue("@Editorial", objeto.Editorial);
                     command.Parameters.AddWithValue("@Estatus", objeto.Estatus);
 
                     command.ExecuteNonQuery();
                 }
-                return respuesta = true;
+                return true;
             }
             catch (Exception ex)
             {
-                return respuesta = false;
+                return false;
             }
         }
     }
